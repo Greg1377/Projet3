@@ -18,7 +18,9 @@
 <body>
     <header>
         <!--logo de mon entreprise entreprise de commande en ligne-->
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></a></i>
         <figure class="logo">
+
             <img src="images/logo/ohmyfood.png" alt="logo de Ohmyfood!">
         </figure>
 
@@ -32,27 +34,31 @@
     <section class="menu-jour">
         <div class="ensemble">
             <h1 class="title-gout">La pallette du goût</h1>
-            <div class="heart">
-
-                <span class="heart-color">
-                <i class="fal fa-heart"aria-hidden="true"></i></span>
-            </div>
+            <i class="far fa-heart" aria-hidden="true"></i></span>
+            <i class="fas fa-heart" aria-hidden="true"></i></span>
         </div>
         <!--section plat entrée+pats+desserts-->
         <div class="menu-container">
 
             <!--1er plat entrée-->
-            <div class="menu-part">
-                <h2 class="menu-part_aliment">ENTRÉES</h2>
+            <article class="menu-part step">
+                <div>
+                    <h2 class="menu-part_aliment">ENTRÉES</h2>
+                    <div class="underline-h2"></div>
+                </div>
                 <div class="step1">
                     <div class="step1_plats">
                         <h3 class="step1_plats_name">Fricassée d'escargot</h3>
-                        <span class="step1_plats_description">Au piment d'Espellette</span>
+                        <span class="step1_plats_description">Au piment d'Espellette </span>
                     </div>
                     <div class="step1_dishes">
                         <div class="step1_dishes_price">25€</div>
                     </div>
+                    <div class="step1_check">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    </div>
                 </div>
+
                 <!--deuxieme plat entrée-->
                 <div class="step2">
                     <div class="step2_plats">
@@ -61,6 +67,9 @@
                     </div>
                     <div class="step2_dishes">
                         <div class="step2_dishes_price">35€</div>
+                    </div>
+                    <div class="step2_check">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
                     </div>
                 </div>
 
@@ -73,73 +82,97 @@
                     <div class="step3_dishes">
                         <div class="step3_dishes_price">20€</div>
                     </div>
-                </div>
-                <!--partie plats de résistance-->
-                <!--1er plats de résistance-->
-                <h2 class="menu-part_aliment">PLATS</h2>
-                <div class="step4">
-                    <div class="step4_plats">
-                        <h3 class="step4_plats_name">Filet de boeuf aux herbes</h3>
-                        <span class="step4_plats_description">Accompagné de sa ribambelle de légumes</span>
-                    </div>
-                    <div class="step4_dishes">
-                        <div class="step4_dishes_price">40€</div>
+                    <div class="step3_check">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
                     </div>
                 </div>
-                <!--deuxieme plat de résistance-->
-                <div class="step5">
-                    <div class="step5_plats">
-                        <h3 class="step5_plats_name">Parmentier de queue de boeuf</h3>
-                        <span class="step5_plats_description">A la truffe noire sur sa purée de panais</span>
-                    </div>
-                    <div class="step5_dishes">
-                        <div class="step5_dishes_price">35€</div>
-                    </div>
+            </article>
+            <!--partie plats de résistance-->
+            <!--1er plats de résistance-->
+            <h2 class="menu-part_aliment">PLATS</h2>
+            <div class="underline-h2"></div>
+            <div class="step4">
+                <div class="step4_plats">
+                    <h3 class="step4_plats_name">Filet de boeuf aux herbes</h3>
+                    <span class="step4_plats_description">Accompagné de sa ribambelle de légumes</span>
                 </div>
+                <div class="step4_dishes">
+                    <div class="step4_dishes_price">40€</div>
+                </div>
+                <div class="step4_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!--deuxieme plat de résistance-->
+            <div class="step5">
+                <div class="step5_plats">
+                    <h3 class="step5_plats_name">Parmentier de queue de boeuf</h3>
+                    <span class="step5_plats_description">A la truffe noire sur sa purée de panais</span>
+                </div>
+                <div class="step5_dishes">
+                    <div class="step5_dishes_price">35€</div>
+                </div>
+                <div class="step5_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
 
-                <!--Troisieme plats de résistence-->
-                <div class="step6">
-                    <div class="step6_plats">
-                        <h3 class="step6_plats_name">Filet de turbot</h3>
-                        <span class="step6_plats_description">Aux argumes</span>
-                    </div>
-                    <div class="step6_dishes">
-                        <div class="step6_dishes_price">20€</div>
-                    </div>
+            <!--Troisieme plats de résistence-->
+            <div class="step6">
+                <div class="step6_plats">
+                    <h3 class="step6_plats_name">Filet de turbot</h3>
+                    <span class="step6_plats_description">Aux argumes</span>
                 </div>
-                <!--partie DESSERT-->
-                <!--1er Dessert-->
-                <h2 class="menu-part_aliment">Desserts</h2>
-                <div class="step4">
-                    <div class="step4_plats">
-                        <h3 class="step4_plats_name">Paris-Brest</h3>
-                        <span class="step4_plats_description">Revisité</span>
-                    </div>
-                    <div class="step4_dishes">
-                        <div class="step4_dishes_price">18€</div>
-                    </div>
+                <div class="step6_dishes">
+                    <div class="step6_dishes_price">20€</div>
                 </div>
-                <!--deuxieme plat de résistance-->
-                <div class="step5">
-                    <div class="step5_plats">
-                        <h3 class="step5_plats_name">Macaron au chocolat d'exception</h3>
-                        <span class="step5_plats_description">Et glace à la vanille de Madagascar</span>
-                    </div>
-                    <div class="step5_dishes">
-                        <div class="step5_dishes_price">22€</div>
-                    </div>
+                <div class="step6_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
                 </div>
+            </div>
+            <!--partie DESSERT-->
+            <!--1er Dessert-->
+            <h2 class="menu-part_aliment">Desserts</h2>
+            <div class="underline-h2"></div>
+            <div class="step4">
+                <div class="step4_plats">
+                    <h3 class="step4_plats_name">Paris-Brest</h3>
+                    <span class="step4_plats_description">Revisité</span>
+                </div>
+                <div class="step4_dishes">
+                    <div class="step4_dishes_price">18€</div>
+                </div>
+                <div class="step4_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!--deuxieme plat de résistance-->
+            <div class="step5">
+                <div class="step5_plats">
+                    <h3 class="step5_plats_name">Macaron au chocolat d'exception</h3>
+                    <span class="step5_plats_description">Et glace à la vanille de Madagascar</span>
+                </div>
+                <div class="step5_dishes">
+                    <div class="step5_dishes_price">22€</div>
+                </div>
+                <div class="step5_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
 
-                <!--Troisieme plats de résistence-->
-                <div class="step6">
-                    <div class="step6_plats">
-                        <h3 class="step6_plats_name">Mousse au chocolat</h3>
-                        <span class="step6_plats_description">Au piment d'espellette et à la truffe noire</span>
-                    </div>
-                    <div class="step6_dishes">
-                        <div class="step6_dishes_price">23€</div>
-                    </div>
+            <!--Troisieme plats de résistence-->
+            <div class="step6">
+                <div class="step6_plats">
+                    <h3 class="step6_plats_name">Mousse au chocolat</h3>
+                    <span class="step6_plats_description">Au piment d'espellette et à la truffe noire</span>
                 </div>
+                <div class="step6_dishes">
+                    <div class="step6_dishes_price">23€</div>
+                </div>
+                <div class="step6_check">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
     </section>
     <!--Bouton pour passer commande-->
     <a href="#" class="bouton-2">Commander</a>
