@@ -482,21 +482,19 @@ footer .footer_text i {
     font-size: 25px;
     color: white;
     border-radius: 0 14px 14px 0;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     padding-top: 2px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     display: flex;
 }
 
+.box:hover {
+    animation: box 2s both;
+}
+
 i.fas.fa-check-circle {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
+    transform: rotate(360deg);
+    transition: transform 500ms;
 }
 
 .underline-h2,
@@ -593,7 +591,6 @@ i.fas.fa-check-circle {
     .step4_dishes,
     .step5_dishes,
     .step6_dishes {
-        margin: -44px -86px 3px 68px;
         display: flex;
         align-items: center;
     }
@@ -773,5 +770,17 @@ d'un élement avec un facteur d'échelle sur deux dimensions*/
         background: -webkit-gradient(linear, left top, left bottom, from (#9356dc), to (#FF79DA));
         background: linear-gradient(to bottom, #9356dc, #FF79da);
         -webkit-background-clip: text;
+    }
+}
+
+
+/*slide price*/
+
+@keyframes box {
+    0% {
+        margin-right: 0;
+    }
+    100% {
+        margin-right: 5em;
     }
 }
