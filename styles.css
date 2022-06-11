@@ -60,13 +60,12 @@ fa-arrow-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     background-color: #dcdcdc;
     padding: 10px;
 }
 
 .paddingsearch {
-    padding-left: 20px;
+    padding-left: 27px;
 }
 
 
@@ -81,19 +80,15 @@ fa-arrow-left {
 
 h1[class='gras'] {
     font-size: 31px;
-    text-align: center;
 }
 
 p[class='sous-titre'] {
-    font-family: "roboto-thin";
-    font-size: 1.1em;
     margin: 15px;
 }
 
 p {
     font-family: "roboto-thin";
     font-size: 1.1em;
-    margin: 0;
 }
 
 
@@ -101,12 +96,10 @@ p {
 
 .bouton-1 {
     padding: 1em 2.5em 1em 2.5em;
-    margin: 2em 0 2em 0;
     line-height: 80px;
     color: #fff;
     font-family: "roboto";
     box-shadow: 2px 5px 5px #c8cdc6;
-    text-align: center;
     font-size: 1.1em;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 30px;
@@ -194,17 +187,16 @@ p {
 
 /*liste de fonctionnement*/
 
+.h2-wel {
+    font-family: "roboto";
+}
+
 .list {
     padding: 2em 1em 2em 1em;
 }
 
 .fonct_title {
     margin-bottom: 1.5em;
-}
-
-.h2-wel {
-    font-family: "roboto";
-    font-size: 1.5em;
 }
 
 .fonct_step {
@@ -405,7 +397,7 @@ footer .footer_text i {
     box-shadow: 3px 7px 10px 2px #eaeaea;
     background-color: #fff;
     border-radius: 15px;
-    margin-top: 14px;
+    margin-top: 17px;
     display: flex;
     white-space: nowrap;
     justify-content: space-between;
@@ -433,15 +425,11 @@ footer .footer_text i {
 .step6_plats {
     padding: 15px 0 15px 10px;
     flex: 1;
-    MIN-WIDTH: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.step1_plats_name,
-.step2_plats_name,
-.step3_plats_name,
-.step4_plats_name,
-.step5_plats_name,
-.step6_plats_name {
+.step1_plats_name {
     font-family: "roboto";
     font-size: 1.1em;
     text-overflow: ellipsis;
@@ -449,52 +437,48 @@ footer .footer_text i {
     margin-bottom: 7px;
 }
 
-.step1_plats_description,
-.step2_plats_description,
-.step3_plats_description,
-.step4_plats_description,
-.step5_plats_description,
-.step6_plats_description {
+.step1_plats_description {
     font-family: "roboto";
     font-size: .9em;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.step1_dishes_price,
-.step2_dishes_price,
-.step3_dishes_price,
-.step4_dishes_price,
-.step5_dishes_price,
-.step6_dishes_price {
+.step1_dishes_price {
     margin-top: 26px;
-    margin-right: 42px;
+    margin-right: 14px;
     padding-bottom: 2px;
     font-weight: bold;
 }
 
-.box {
+.step1_box {
     overflow: hidden;
     text-align: center;
     background: #99e2d0;
-    margin-right: -60px;
-    width: 69px;
-    font-size: 25px;
+    width: 0px;
+    font-size: 29px;
     color: white;
     border-radius: 0 14px 14px 0;
     align-items: center;
     justify-content: center;
     padding-top: 2px;
     display: flex;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
-.box:hover {
-    animation: box 2s both;
+.step1:hover .step1_box {
+    opacity: 100%;
+    width: 7rem;
 }
 
-i.fas.fa-check-circle {
+.step1:hover .fa-check-circle {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    transition: transform 500ms;
+}
+
+.step1 .step1_box .fa-check-circle {
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .underline-h2,
@@ -558,12 +542,7 @@ i.fas.fa-check-circle {
     img {
         width: 50%;
     }
-    .step1,
-    .step2,
-    .step3,
-    .step4,
-    .step5,
-    .step6 {
+    .step1 {
         box-shadow: 3px 7px 10px 2px #eaeaea;
         background-color: #fff;
         border-radius: 15px;
@@ -572,34 +551,32 @@ i.fas.fa-check-circle {
         white-space: nowrap;
         justify-content: space-between;
         cursor: pointer;
-        OVERFLOW: hidden;
         height: 4.7em;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    .step1_plats_name,
-    .step2_plats_name,
-    .step3_plats_name,
-    .step4_plats_name,
-    .step5_plats_name,
-    .step6_plats_name {
+    .h2-wel {
+        font-family: "roboto";
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .fonct_steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .step1_plats_name {
         font-family: "roboto";
         font-size: 16px;
         margin: 5px 0 3px 0;
     }
-    .step1_dishes,
-    .step2_dishes,
-    .step3_dishes,
-    .step4_dishes,
-    .step5_dishes,
-    .step6_dishes {
+    .step1_dishes {
         display: flex;
         align-items: center;
     }
-    .step1_check,
-    .step2_check,
-    .step3_check,
-    .step4_check,
-    .step5_check,
-    .step6_check {
+    .step1_check {
         margin-right: 133px;
         color: #f6f6f6;
         background-color: #99e2d0;
@@ -672,11 +649,11 @@ i.fas.fa-check-circle {
 @keyframes appear {
     0% {
         transform: translateY(200px);
-        opacity: 0;
+        opacity: 0%;
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 100%;
+        transform: translateY(0px);
     }
     /*fin  de la transformation*/
 }
@@ -774,13 +751,13 @@ d'un élement avec un facteur d'échelle sur deux dimensions*/
 }
 
 
-/*slide price*/
+/*slide box*/
 
 @keyframes box {
     0% {
         margin-right: 0;
     }
     100% {
-        margin-right: 5em;
+        margin-right: 0;
     }
 }
