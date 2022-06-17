@@ -123,6 +123,9 @@ p {
     cursor: pointer;
 }
 
+
+/*ensemble des like avec les checkbox*/
+
 .checkbox-like {
     position: absolute;
     right: 20px;
@@ -158,6 +161,9 @@ p {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 }
+
+
+/*boite à cochéees avec la couleur lors du checked*/
 
 .checkbox-like1 input[type=checkbox]:checked~.unchecked {
     display: none;
@@ -389,12 +395,7 @@ footer .footer_text i {
     margin: 1.5em 0 0 0;
 }
 
-.step1,
-.step2,
-.step3,
-.step4,
-.step5,
-.step6 {
+.step1 {
     box-shadow: 3px 7px 10px 2px #eaeaea;
     background-color: #fff;
     border-radius: 15px;
@@ -407,23 +408,13 @@ footer .footer_text i {
     height: 4.7em;
 }
 
-.step1,
-.step2,
-.step3,
-.step4,
-.step5,
-.step6 {
+.step1 {
     animation-name: appear;
     animation-duration: 1000ms;
     animation-fill-mode: initial;
 }
 
-.step1_plats,
-.step2_plats,
-.step3_plats,
-.step4_plats,
-.step5_plats,
-.step6_plats {
+.step1_plats {
     padding: 15px 0 15px 10px;
     flex: 1;
     text-overflow: ellipsis;
@@ -464,7 +455,7 @@ footer .footer_text i {
     justify-content: center;
     padding-top: 2px;
     display: flex;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out;
 }
 
 .step1:hover .step1_box {
@@ -493,40 +484,8 @@ footer .footer_text i {
     margin-left: 0;
 }
 
-.spinner {
-    height: 100%;
-    background-color: white;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-    animation: spinner 2s linear;
-    visibility: hidden;
-}
 
-.spinner_border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid transparent;
-    border-top: 10px solid #9356dc;
-    border-bottom: 10px solid #FF79DA;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: spin 2s linear;
-    z-index: 10;
-    visibility: hidden;
-}
+/*si largeur de l'appreil est inferieur ou égale à 600px */
 
 @media screen and (max-width:599px) {
     .logo {
@@ -597,7 +556,7 @@ footer .footer_text i {
 }
 
 
-/*si largeur de l'appreil est superieur ou égalme à 600px */
+/*si largeur de l'appreil est superieur ou égale à 600px */
 
 @media screen and (min-width:600px) {
     .h2-wel {
@@ -694,9 +653,9 @@ footer .footer_text i {
 
 
 /*la fonction scale permet de modifier la taille 
-d'un élement avec un facteur d'échelle sur deux dimensions*/
+d'un élement avec un facteur d'échelle sur une ou deux dimension*/
 
-@-webkit-keyframes spin {
+@keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         overflow: hidden;
@@ -721,19 +680,6 @@ d'un élement avec un facteur d'échelle sur deux dimensions*/
     }
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        overflow: hidden;
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
-        border-top-color: #FF79DA;
-        border-bottom-color: #9356dc;
-        visibility: hidden;
-    }
-}
-
 
 /*boutons -color like*/
 
@@ -750,17 +696,5 @@ d'un élement avec un facteur d'échelle sur deux dimensions*/
         background: -webkit-gradient(linear, left top, left bottom, from #9356dc, to #FF79DA);
         background: linear-gradient(to bottom, #9356dc, #FF79da);
         -webkit-background-clip: text;
-    }
-}
-
-
-/*slide box*/
-
-@keyframes box {
-    0% {
-        margin-right: 0;
-    }
-    100% {
-        margin-right: 0;
     }
 }
