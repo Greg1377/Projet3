@@ -87,8 +87,8 @@ p[class='sous-titre'] {
 }
 
 p {
-    font-family: "roboto-thin";
-    font-size: 1.1em;
+    font-family: "roboto";
+    font-size: 16px;
 }
 
 
@@ -354,6 +354,7 @@ footer .footer_text i {
 .logo-footer {
     line-height: 52px;
     font-size: 27px;
+    font-family: shrikhand;
 }
 
 
@@ -375,12 +376,6 @@ footer .footer_text i {
 
 .ensemble {
     display: flex;
-}
-
-.title-gout {
-    font-family: "shrikhand";
-    font-size: 1.7em;
-    margin: 0;
 }
 
 .title-gout_image {
@@ -482,6 +477,14 @@ footer .footer_text i {
     margin: 4px;
     padding: 0;
     margin-left: 0;
+}
+
+.bouton-1:hover {
+    opacity: 50%;
+}
+
+.bouton-2:hover {
+    opacity: 50%;
 }
 
 
