@@ -123,6 +123,14 @@ p {
     cursor: pointer;
 }
 
+.bouton-1:hover {
+    opacity: 50%;
+}
+
+.bouton-2:hover {
+    opacity: 50%;
+}
+
 
 /*ensemble des like avec les checkbox*/
 
@@ -477,14 +485,6 @@ footer .footer_text i {
     margin: 4px;
     padding: 0;
     margin-left: 0;
-}
-
-.bouton-1:hover {
-    opacity: 50%;
-}
-
-.bouton-2:hover {
-    opacity: 50%;
 }
 
 
