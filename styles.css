@@ -19,7 +19,7 @@ roboto:'roboto',sans-sherif;
 */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "roboto";
 }
 
 a {
@@ -89,6 +89,10 @@ p[class='sous-titre'] {
 p {
     font-family: "roboto";
     font-size: 16px;
+}
+
+h1.title-gout {
+    font-family: " shrikhand";
 }
 
 
@@ -203,7 +207,7 @@ p {
 /*liste de fonctionnement*/
 
 .h2-wel {
-    font-family: "roboto";
+    font-family: " shrikhand";
 }
 
 .list {
@@ -289,7 +293,7 @@ p {
 }
 
 .titre-restaurants {
-    font-family: "roboto-medium";
+    font-family: " shrikhand";
     font-size: 1.5em;
 }
 
