@@ -92,7 +92,7 @@ p {
 }
 
 h1.title-gout {
-    font-family: " shrikhand";
+    font-family: "shrikhand";
 }
 
 
@@ -293,7 +293,7 @@ h1.title-gout {
 }
 
 .titre-restaurants {
-    font-family: " shrikhand";
+    font-family: "shrikhand";
     font-size: 1.5em;
 }
 
@@ -523,7 +523,7 @@ footer .footer_text i {
         overflow: hidden;
     }
     .h2-wel {
-        font-family: "roboto";
+        font-family: "shrikhand";
         font-size: 1.5em;
         display: flex;
         justify-content: center;
@@ -568,6 +568,7 @@ footer .footer_text i {
 @media screen and (min-width:600px) {
     .h2-wel {
         margin-left: 2em;
+        font-family: "shrikhand";
     }
     .fonct_steps {
         display: flex;
